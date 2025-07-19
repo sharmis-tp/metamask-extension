@@ -5772,6 +5772,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@metamask/controller-utils@npm:^11.11.0":
+  version: 11.11.0
+  resolution: "@metamask/controller-utils@npm:11.11.0"
+  dependencies:
+    "@metamask/eth-query": "npm:^4.0.0"
+    "@metamask/ethjs-unit": "npm:^0.3.0"
+    "@metamask/utils": "npm:^11.4.2"
+    "@spruceid/siwe-parser": "npm:2.1.0"
+    "@types/bn.js": "npm:^5.1.5"
+    bignumber.js: "npm:^9.1.2"
+    bn.js: "npm:^5.2.1"
+    cockatiel: "npm:^3.1.2"
+    eth-ens-namehash: "npm:^2.0.8"
+    fast-deep-equal: "npm:^3.1.3"
+    lodash: "npm:^4.17.21"
+  peerDependencies:
+    "@babel/runtime": ^7.0.0
+  checksum: 10/9b4ac01beb7359fea6da869117be69f8973d2d0e190469773b5f2726b86ccf0150d455bf8b19e9aa0504228fb2fb5fb7e9334a66df83cd2d02a4c84f250dad5a
+  languageName: node
+  linkType: hard
+
 "@metamask/delegation-controller@npm:^0.4.0":
   version: 0.4.0
   resolution: "@metamask/delegation-controller@npm:0.4.0"
@@ -6951,6 +6972,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@metamask/phishing-controller@npm:^13.1.0":
+  version: 13.1.0
+  resolution: "@metamask/phishing-controller@npm:13.1.0"
+  dependencies:
+    "@metamask/base-controller": "npm:^8.0.1"
+    "@metamask/controller-utils": "npm:^11.11.0"
+    "@noble/hashes": "npm:^1.4.0"
+    "@types/punycode": "npm:^2.1.0"
+    ethereum-cryptography: "npm:^2.1.2"
+    fastest-levenshtein: "npm:^1.0.16"
+    punycode: "npm:^2.1.1"
+  checksum: 10/c62f71291736dfd635cc69b2d422687d8d610591a5e1cd9a6b4806cdc19221a72fe7699c0cabe0a2a108b49c3cc4dcb88a5b283fba374fe13e54d5813fb77902
+  languageName: node
+  linkType: hard
+
 "@metamask/phishing-warning@npm:^5.0.0":
   version: 5.0.0
   resolution: "@metamask/phishing-warning@npm:5.0.0"
@@ -7254,9 +7290,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/snaps-controllers@npm:^14.1.0":
+"@metamask/snaps-controllers@file:../snaps-main/packages/snaps-controllers::locator=metamask-crx%40workspace%3A.":
   version: 14.1.0
-  resolution: "@metamask/snaps-controllers@npm:14.1.0"
+  resolution: "@metamask/snaps-controllers@file:../snaps-main/packages/snaps-controllers#../snaps-main/packages/snaps-controllers::hash=048a78&locator=metamask-crx%40workspace%3A."
   dependencies:
     "@metamask/approval-controller": "npm:^7.1.3"
     "@metamask/base-controller": "npm:^8.0.1"
@@ -7265,13 +7301,13 @@ __metadata:
     "@metamask/key-tree": "npm:^10.1.1"
     "@metamask/object-multiplex": "npm:^2.1.0"
     "@metamask/permission-controller": "npm:^11.0.6"
-    "@metamask/phishing-controller": "npm:^12.6.0"
+    "@metamask/phishing-controller": "npm:^13.1.0"
     "@metamask/post-message-stream": "npm:^10.0.0"
     "@metamask/rpc-errors": "npm:^7.0.3"
     "@metamask/snaps-registry": "npm:^3.2.3"
-    "@metamask/snaps-rpc-methods": "npm:^13.3.0"
-    "@metamask/snaps-sdk": "npm:^9.2.0"
-    "@metamask/snaps-utils": "npm:^11.1.0"
+    "@metamask/snaps-rpc-methods": "file:../snaps-rpc-methods"
+    "@metamask/snaps-sdk": "file:../snaps-sdk"
+    "@metamask/snaps-utils": "file:../snaps-utils"
     "@metamask/utils": "npm:^11.4.2"
     "@xstate/fsm": "npm:^2.0.0"
     async-mutex: "npm:^0.5.0"
@@ -7287,29 +7323,29 @@ __metadata:
     semver: "npm:^7.5.4"
     tar-stream: "npm:^3.1.7"
   peerDependencies:
-    "@metamask/snaps-execution-environments": ^10.1.0
+    "@metamask/snaps-execution-environments": "*"
   peerDependenciesMeta:
     "@metamask/snaps-execution-environments":
       optional: true
-  checksum: 10/f98e24f4eb8d5997202c4cb5c71934a3e4e348ed5e46e6253dc51144a369c8bb758a64abe42c3111c47e07c1cb159be02c785ede8a75c1abbdf922a0ebed9310
+  checksum: 10/6eee8fd351f04fd602340ec84118bf2461913eac77da7892fc1e30a7d72040781036301744517eaac8ae483185c0f301e2d1eabec3683fd8c499bebf22762d1b
   languageName: node
   linkType: hard
 
-"@metamask/snaps-execution-environments@npm:^10.1.0":
+"@metamask/snaps-execution-environments@file:../snaps-main/packages/snaps-execution-environments::locator=metamask-crx%40workspace%3A.":
   version: 10.1.0
-  resolution: "@metamask/snaps-execution-environments@npm:10.1.0"
+  resolution: "@metamask/snaps-execution-environments@file:../snaps-main/packages/snaps-execution-environments#../snaps-main/packages/snaps-execution-environments::hash=ede5a4&locator=metamask-crx%40workspace%3A."
   dependencies:
     "@metamask/json-rpc-engine": "npm:^10.0.2"
     "@metamask/object-multiplex": "npm:^2.1.0"
     "@metamask/post-message-stream": "npm:^10.0.0"
     "@metamask/providers": "npm:^22.1.0"
     "@metamask/rpc-errors": "npm:^7.0.3"
-    "@metamask/snaps-sdk": "npm:^9.2.0"
-    "@metamask/snaps-utils": "npm:^11.1.0"
+    "@metamask/snaps-sdk": "file:../snaps-sdk"
+    "@metamask/snaps-utils": "file:../snaps-utils"
     "@metamask/superstruct": "npm:^3.2.1"
     "@metamask/utils": "npm:^11.4.2"
     readable-stream: "npm:^3.6.2"
-  checksum: 10/d2adb576c2cead32cf3340c7435c0c98d04c522b372adb813a1b79b421360d54d7773a26c03e934a3964fab7e20a2d38a3d6047bf0d683a07730a9e094aa02f8
+  checksum: 10/b3432a3be787b69d35d32ca7cbd1c4c972ca58ee95db9c5e3e4b12ba8f954dcf88b0be3d0f03756349b4ad13f67ed758e1ea34ec3ce5f7002e5c1fae1ae62465
   languageName: node
   linkType: hard
 
@@ -7325,36 +7361,212 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/snaps-rpc-methods@npm:^13.3.0":
+"@metamask/snaps-rpc-methods@file:../snaps-main/packages/snaps-rpc-methods::locator=metamask-crx%40workspace%3A.":
   version: 13.3.0
-  resolution: "@metamask/snaps-rpc-methods@npm:13.3.0"
+  resolution: "@metamask/snaps-rpc-methods@file:../snaps-main/packages/snaps-rpc-methods#../snaps-main/packages/snaps-rpc-methods::hash=bb2d90&locator=metamask-crx%40workspace%3A."
   dependencies:
     "@metamask/key-tree": "npm:^10.1.1"
     "@metamask/permission-controller": "npm:^11.0.6"
-    "@metamask/rpc-errors": "npm:^7.0.2"
-    "@metamask/snaps-sdk": "npm:^9.1.0"
-    "@metamask/snaps-utils": "npm:^11.0.0"
+    "@metamask/rpc-errors": "npm:^7.0.3"
+    "@metamask/snaps-sdk": "file:../snaps-sdk"
+    "@metamask/snaps-utils": "file:../snaps-utils"
     "@metamask/superstruct": "npm:^3.2.1"
-    "@metamask/utils": "npm:^11.4.1"
+    "@metamask/utils": "npm:^11.4.2"
     "@noble/hashes": "npm:^1.7.1"
-  checksum: 10/27fdc0c05461999b55e1b953b72872dbd76583d5b54af7fe73f61924178516f8d0a160b651dffa623a93419b7cd658f979df7c3e1475db4738c8061a2165da27
+  checksum: 10/64e77950cf0cb82272530bac94e4264bed611e6d60ee15f7536aab05673aa6ad832896e92fe52220c779a3e23ae3c80ca3fa656590a8577ef73887fd3bac1c6f
   languageName: node
   linkType: hard
 
-"@metamask/snaps-sdk@npm:^9.2.0":
+"@metamask/snaps-rpc-methods@file:../snaps-rpc-methods::locator=%40metamask%2Fsnaps-controllers%40file%3A..%2Fsnaps-main%2Fpackages%2Fsnaps-controllers%23..%2Fsnaps-main%2Fpackages%2Fsnaps-controllers%3A%3Ahash%3D048a78%26locator%3Dmetamask-crx%2540workspace%253A.":
+  version: 13.3.0
+  resolution: "@metamask/snaps-rpc-methods@file:../snaps-rpc-methods#../snaps-rpc-methods::hash=bb2d90&locator=%40metamask%2Fsnaps-controllers%40file%3A..%2Fsnaps-main%2Fpackages%2Fsnaps-controllers%23..%2Fsnaps-main%2Fpackages%2Fsnaps-controllers%3A%3Ahash%3D048a78%26locator%3Dmetamask-crx%2540workspace%253A."
+  dependencies:
+    "@metamask/key-tree": "npm:^10.1.1"
+    "@metamask/permission-controller": "npm:^11.0.6"
+    "@metamask/rpc-errors": "npm:^7.0.3"
+    "@metamask/snaps-sdk": "file:../snaps-sdk"
+    "@metamask/snaps-utils": "file:../snaps-utils"
+    "@metamask/superstruct": "npm:^3.2.1"
+    "@metamask/utils": "npm:^11.4.2"
+    "@noble/hashes": "npm:^1.7.1"
+  checksum: 10/64e77950cf0cb82272530bac94e4264bed611e6d60ee15f7536aab05673aa6ad832896e92fe52220c779a3e23ae3c80ca3fa656590a8577ef73887fd3bac1c6f
+  languageName: node
+  linkType: hard
+
+"@metamask/snaps-sdk@file:../snaps-main/packages/snaps-sdk::locator=metamask-crx%40workspace%3A.":
   version: 9.2.0
-  resolution: "@metamask/snaps-sdk@npm:9.2.0"
+  resolution: "@metamask/snaps-sdk@file:../snaps-main/packages/snaps-sdk#../snaps-main/packages/snaps-sdk::hash=674ded&locator=metamask-crx%40workspace%3A."
   dependencies:
     "@metamask/key-tree": "npm:^10.1.1"
     "@metamask/providers": "npm:^22.1.0"
     "@metamask/rpc-errors": "npm:^7.0.3"
     "@metamask/superstruct": "npm:^3.2.1"
     "@metamask/utils": "npm:^11.4.2"
-  checksum: 10/cb85e2d526533ddc3704cbb5ecb600e6ca111029b3df196a57166e090ee6ac1b995b0bd635798a0fc3210ece54696a8d53397024a5de475bdbb8097fb84be047
+  checksum: 10/9172684bdb27dcf5c33e375d3cbc94429db45ef08788502c2d82080de7b8073550aa5bb8a2497ec2c26103129626e69f6f495e9da48f6f594b1d38c4c5c00268
   languageName: node
   linkType: hard
 
-"@metamask/snaps-utils@npm:^11.0.0, @metamask/snaps-utils@npm:^11.1.0":
+"@metamask/snaps-utils@file:../snaps-main/packages/snaps-utils::locator=metamask-crx%40workspace%3A.":
+  version: 11.1.0
+  resolution: "@metamask/snaps-utils@file:../snaps-main/packages/snaps-utils#../snaps-main/packages/snaps-utils::hash=8b8f22&locator=metamask-crx%40workspace%3A."
+  dependencies:
+    "@babel/core": "npm:^7.23.2"
+    "@babel/types": "npm:^7.23.0"
+    "@metamask/base-controller": "npm:^8.0.1"
+    "@metamask/key-tree": "npm:^10.1.1"
+    "@metamask/permission-controller": "npm:^11.0.6"
+    "@metamask/rpc-errors": "npm:^7.0.3"
+    "@metamask/slip44": "npm:^4.2.0"
+    "@metamask/snaps-registry": "npm:^3.2.3"
+    "@metamask/snaps-sdk": "file:../snaps-sdk"
+    "@metamask/superstruct": "npm:^3.2.1"
+    "@metamask/utils": "npm:^11.4.2"
+    "@noble/hashes": "npm:^1.7.1"
+    "@scure/base": "npm:^1.1.1"
+    chalk: "npm:^4.1.2"
+    cron-parser: "npm:^4.5.0"
+    fast-deep-equal: "npm:^3.1.3"
+    fast-json-stable-stringify: "npm:^2.1.0"
+    fast-xml-parser: "npm:^4.4.1"
+    luxon: "npm:^3.5.0"
+    marked: "npm:^12.0.1"
+    rfdc: "npm:^1.3.0"
+    semver: "npm:^7.5.4"
+    ses: "npm:^1.13.1"
+    validate-npm-package-name: "npm:^5.0.0"
+  checksum: 10/58c9940791dd9eff16aab6b8eb4b0363cf2c5ab73f885031622e3818b0061291674ad21ecc5dc89b6063061b9b99b66e3d72d096622b907fcac8f0ef8dd9a6be
+  languageName: node
+  linkType: hard
+
+"@metamask/snaps-utils@file:../snaps-utils::locator=%40metamask%2Fsnaps-controllers%40file%3A..%2Fsnaps-main%2Fpackages%2Fsnaps-controllers%23..%2Fsnaps-main%2Fpackages%2Fsnaps-controllers%3A%3Ahash%3D048a78%26locator%3Dmetamask-crx%2540workspace%253A.":
+  version: 11.1.0
+  resolution: "@metamask/snaps-utils@file:../snaps-utils#../snaps-utils::hash=8b8f22&locator=%40metamask%2Fsnaps-controllers%40file%3A..%2Fsnaps-main%2Fpackages%2Fsnaps-controllers%23..%2Fsnaps-main%2Fpackages%2Fsnaps-controllers%3A%3Ahash%3D048a78%26locator%3Dmetamask-crx%2540workspace%253A."
+  dependencies:
+    "@babel/core": "npm:^7.23.2"
+    "@babel/types": "npm:^7.23.0"
+    "@metamask/base-controller": "npm:^8.0.1"
+    "@metamask/key-tree": "npm:^10.1.1"
+    "@metamask/permission-controller": "npm:^11.0.6"
+    "@metamask/rpc-errors": "npm:^7.0.3"
+    "@metamask/slip44": "npm:^4.2.0"
+    "@metamask/snaps-registry": "npm:^3.2.3"
+    "@metamask/snaps-sdk": "file:../snaps-sdk"
+    "@metamask/superstruct": "npm:^3.2.1"
+    "@metamask/utils": "npm:^11.4.2"
+    "@noble/hashes": "npm:^1.7.1"
+    "@scure/base": "npm:^1.1.1"
+    chalk: "npm:^4.1.2"
+    cron-parser: "npm:^4.5.0"
+    fast-deep-equal: "npm:^3.1.3"
+    fast-json-stable-stringify: "npm:^2.1.0"
+    fast-xml-parser: "npm:^4.4.1"
+    luxon: "npm:^3.5.0"
+    marked: "npm:^12.0.1"
+    rfdc: "npm:^1.3.0"
+    semver: "npm:^7.5.4"
+    ses: "npm:^1.13.1"
+    validate-npm-package-name: "npm:^5.0.0"
+  checksum: 10/58c9940791dd9eff16aab6b8eb4b0363cf2c5ab73f885031622e3818b0061291674ad21ecc5dc89b6063061b9b99b66e3d72d096622b907fcac8f0ef8dd9a6be
+  languageName: node
+  linkType: hard
+
+"@metamask/snaps-utils@file:../snaps-utils::locator=%40metamask%2Fsnaps-execution-environments%40file%3A..%2Fsnaps-main%2Fpackages%2Fsnaps-execution-environments%23..%2Fsnaps-main%2Fpackages%2Fsnaps-execution-environments%3A%3Ahash%3Dede5a4%26locator%3Dmetamask-crx%2540workspace%253A.":
+  version: 11.1.0
+  resolution: "@metamask/snaps-utils@file:../snaps-utils#../snaps-utils::hash=8b8f22&locator=%40metamask%2Fsnaps-execution-environments%40file%3A..%2Fsnaps-main%2Fpackages%2Fsnaps-execution-environments%23..%2Fsnaps-main%2Fpackages%2Fsnaps-execution-environments%3A%3Ahash%3Dede5a4%26locator%3Dmetamask-crx%2540workspace%253A."
+  dependencies:
+    "@babel/core": "npm:^7.23.2"
+    "@babel/types": "npm:^7.23.0"
+    "@metamask/base-controller": "npm:^8.0.1"
+    "@metamask/key-tree": "npm:^10.1.1"
+    "@metamask/permission-controller": "npm:^11.0.6"
+    "@metamask/rpc-errors": "npm:^7.0.3"
+    "@metamask/slip44": "npm:^4.2.0"
+    "@metamask/snaps-registry": "npm:^3.2.3"
+    "@metamask/snaps-sdk": "file:../snaps-sdk"
+    "@metamask/superstruct": "npm:^3.2.1"
+    "@metamask/utils": "npm:^11.4.2"
+    "@noble/hashes": "npm:^1.7.1"
+    "@scure/base": "npm:^1.1.1"
+    chalk: "npm:^4.1.2"
+    cron-parser: "npm:^4.5.0"
+    fast-deep-equal: "npm:^3.1.3"
+    fast-json-stable-stringify: "npm:^2.1.0"
+    fast-xml-parser: "npm:^4.4.1"
+    luxon: "npm:^3.5.0"
+    marked: "npm:^12.0.1"
+    rfdc: "npm:^1.3.0"
+    semver: "npm:^7.5.4"
+    ses: "npm:^1.13.1"
+    validate-npm-package-name: "npm:^5.0.0"
+  checksum: 10/58c9940791dd9eff16aab6b8eb4b0363cf2c5ab73f885031622e3818b0061291674ad21ecc5dc89b6063061b9b99b66e3d72d096622b907fcac8f0ef8dd9a6be
+  languageName: node
+  linkType: hard
+
+"@metamask/snaps-utils@file:../snaps-utils::locator=%40metamask%2Fsnaps-rpc-methods%40file%3A..%2Fsnaps-main%2Fpackages%2Fsnaps-rpc-methods%23..%2Fsnaps-main%2Fpackages%2Fsnaps-rpc-methods%3A%3Ahash%3Dbb2d90%26locator%3Dmetamask-crx%2540workspace%253A.":
+  version: 11.1.0
+  resolution: "@metamask/snaps-utils@file:../snaps-utils#../snaps-utils::hash=8b8f22&locator=%40metamask%2Fsnaps-rpc-methods%40file%3A..%2Fsnaps-main%2Fpackages%2Fsnaps-rpc-methods%23..%2Fsnaps-main%2Fpackages%2Fsnaps-rpc-methods%3A%3Ahash%3Dbb2d90%26locator%3Dmetamask-crx%2540workspace%253A."
+  dependencies:
+    "@babel/core": "npm:^7.23.2"
+    "@babel/types": "npm:^7.23.0"
+    "@metamask/base-controller": "npm:^8.0.1"
+    "@metamask/key-tree": "npm:^10.1.1"
+    "@metamask/permission-controller": "npm:^11.0.6"
+    "@metamask/rpc-errors": "npm:^7.0.3"
+    "@metamask/slip44": "npm:^4.2.0"
+    "@metamask/snaps-registry": "npm:^3.2.3"
+    "@metamask/snaps-sdk": "file:../snaps-sdk"
+    "@metamask/superstruct": "npm:^3.2.1"
+    "@metamask/utils": "npm:^11.4.2"
+    "@noble/hashes": "npm:^1.7.1"
+    "@scure/base": "npm:^1.1.1"
+    chalk: "npm:^4.1.2"
+    cron-parser: "npm:^4.5.0"
+    fast-deep-equal: "npm:^3.1.3"
+    fast-json-stable-stringify: "npm:^2.1.0"
+    fast-xml-parser: "npm:^4.4.1"
+    luxon: "npm:^3.5.0"
+    marked: "npm:^12.0.1"
+    rfdc: "npm:^1.3.0"
+    semver: "npm:^7.5.4"
+    ses: "npm:^1.13.1"
+    validate-npm-package-name: "npm:^5.0.0"
+  checksum: 10/58c9940791dd9eff16aab6b8eb4b0363cf2c5ab73f885031622e3818b0061291674ad21ecc5dc89b6063061b9b99b66e3d72d096622b907fcac8f0ef8dd9a6be
+  languageName: node
+  linkType: hard
+
+"@metamask/snaps-utils@file:../snaps-utils::locator=%40metamask%2Fsnaps-rpc-methods%40file%3A..%2Fsnaps-rpc-methods%23..%2Fsnaps-rpc-methods%3A%3Ahash%3Dbb2d90%26locator%3D%2540metamask%252Fsnaps-controllers%2540file%253A..%252Fsnaps-main%252Fpackages%252Fsnaps-controllers%2523..%252Fsnaps-main%252Fpackages%252Fsnaps-controllers%253A%253Ahash%253D048a78%2526locator%253Dmetamask-crx%252540workspace%25253A.":
+  version: 11.1.0
+  resolution: "@metamask/snaps-utils@file:../snaps-utils#../snaps-utils::hash=8b8f22&locator=%40metamask%2Fsnaps-rpc-methods%40file%3A..%2Fsnaps-rpc-methods%23..%2Fsnaps-rpc-methods%3A%3Ahash%3Dbb2d90%26locator%3D%2540metamask%252Fsnaps-controllers%2540file%253A..%252Fsnaps-main%252Fpackages%252Fsnaps-controllers%2523..%252Fsnaps-main%252Fpackages%252Fsnaps-controllers%253A%253Ahash%253D048a78%2526locator%253Dmetamask-crx%252540workspace%25253A."
+  dependencies:
+    "@babel/core": "npm:^7.23.2"
+    "@babel/types": "npm:^7.23.0"
+    "@metamask/base-controller": "npm:^8.0.1"
+    "@metamask/key-tree": "npm:^10.1.1"
+    "@metamask/permission-controller": "npm:^11.0.6"
+    "@metamask/rpc-errors": "npm:^7.0.3"
+    "@metamask/slip44": "npm:^4.2.0"
+    "@metamask/snaps-registry": "npm:^3.2.3"
+    "@metamask/snaps-sdk": "file:../snaps-sdk"
+    "@metamask/superstruct": "npm:^3.2.1"
+    "@metamask/utils": "npm:^11.4.2"
+    "@noble/hashes": "npm:^1.7.1"
+    "@scure/base": "npm:^1.1.1"
+    chalk: "npm:^4.1.2"
+    cron-parser: "npm:^4.5.0"
+    fast-deep-equal: "npm:^3.1.3"
+    fast-json-stable-stringify: "npm:^2.1.0"
+    fast-xml-parser: "npm:^4.4.1"
+    luxon: "npm:^3.5.0"
+    marked: "npm:^12.0.1"
+    rfdc: "npm:^1.3.0"
+    semver: "npm:^7.5.4"
+    ses: "npm:^1.13.1"
+    validate-npm-package-name: "npm:^5.0.0"
+  checksum: 10/58c9940791dd9eff16aab6b8eb4b0363cf2c5ab73f885031622e3818b0061291674ad21ecc5dc89b6063061b9b99b66e3d72d096622b907fcac8f0ef8dd9a6be
+  languageName: node
+  linkType: hard
+
+"@metamask/snaps-utils@npm:^11.0.0":
   version: 11.1.0
   resolution: "@metamask/snaps-utils@npm:11.1.0"
   dependencies:
@@ -7635,7 +7847,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/utils@npm:^11.0.1, @metamask/utils@npm:^11.1.0, @metamask/utils@npm:^11.2.0, @metamask/utils@npm:^11.4.0, @metamask/utils@npm:^11.4.1, @metamask/utils@npm:^11.4.2":
+"@metamask/utils@npm:^11.0.1, @metamask/utils@npm:^11.1.0, @metamask/utils@npm:^11.2.0, @metamask/utils@npm:^11.4.0, @metamask/utils@npm:^11.4.2":
   version: 11.4.2
   resolution: "@metamask/utils@npm:11.4.2"
   dependencies:
@@ -31979,11 +32191,11 @@ __metadata:
     "@metamask/selected-network-controller": "npm:^22.1.0"
     "@metamask/signature-controller": "npm:^30.0.0"
     "@metamask/smart-transactions-controller": "npm:^17.0.0"
-    "@metamask/snaps-controllers": "npm:^14.1.0"
-    "@metamask/snaps-execution-environments": "npm:^10.1.0"
-    "@metamask/snaps-rpc-methods": "npm:^13.3.0"
-    "@metamask/snaps-sdk": "npm:^9.2.0"
-    "@metamask/snaps-utils": "npm:^11.1.0"
+    "@metamask/snaps-controllers": "file:../snaps-main/packages/snaps-controllers"
+    "@metamask/snaps-execution-environments": "file:../snaps-main/packages/snaps-execution-environments"
+    "@metamask/snaps-rpc-methods": "file:../snaps-main/packages/snaps-rpc-methods"
+    "@metamask/snaps-sdk": "file:../snaps-main/packages/snaps-sdk"
+    "@metamask/snaps-utils": "file:../snaps-main/packages/snaps-utils"
     "@metamask/solana-wallet-snap": "npm:^1.36.0"
     "@metamask/solana-wallet-standard": "npm:^0.5.1"
     "@metamask/streams": "npm:^0.2.0"
